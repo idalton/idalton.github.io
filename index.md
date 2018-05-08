@@ -3,8 +3,8 @@ layout: default
 ---
 ## Welcome to my github hosted website
 
-I intend to make this webpage a showcase of any interesting projects I make.
-The webpage is still being developed. Right now it only has the default themes mardown file.
+I intend to make this webpage a showcase of any interesting projects I make.  
+The webpage is still being developed. Right now it only has the default theme's markdown file.
 
 Stay tuned!
 
