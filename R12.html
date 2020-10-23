@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+ <style type="text/css">
+    #limit {
+        max-width: 1000px;
+    }
+ </style>
+<body>
+    <p> Rock 1 (180 Images)
+    <div
+	  id="limit"
+      class="cloudimage-360"
+      data-folder="https://f001.backblazeb2.com/file/Rock-Collection/R12/"
+      data-filename="R12_adjusted_1x1_180_{index}.jpg"
+      data-amount="180"
+      data-magnifier="2"
+      data-spin-reverse   
+    >
+        <button class="cloudimage-360-prev"></button>
+	<button class="cloudimage-360-next"></button>
+    </div>
+
+    
+   <!-- Add script tag with CDN link to js-cloudimage-360-view lib after all content in body tag -->
+    <script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/2/js-cloudimage-360-view.min.js"></script>
+ </body>
+
+<style type="text/css">
+.cloudimage-360 .cloudimage-360-prev, .cloudimage-360 .cloudimage-360-next {
+	padding: 8px;
+	background: rgba(255, 255, 255, 0.5);
+	border: none;
+	border-radius: 4px;
+}
+.cloudimage-360 .cloudimage-360-prev:focus, .cloudimage-360 .cloudimage-360-next:focus {
+	outline: none;
+}
+.cloudimage-360 .cloudimage-360-prev {
+	display: none;
+	position: absolute;
+	z-index: 100;
+	top: calc(50% - 15px);
+	left: 20px;
+}
+.cloudimage-360 .cloudimage-360-next {
+	display: none;
+	position: absolute;
+	z-index: 100;
+	top: calc(50% - 15px);
+	right: 20px;
+}
+.cloudimage-360 .cloudimage-360-prev:before, .cloudimage-360 .cloudimage-360-next:before {
+	content: '';
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: 50% 50% / cover no-repeat;
+}
+.cloudimage-360 .cloudimage-360-prev:before {
+	background-image: url('https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/assets/img/arrow-left.svg');
+}
+.cloudimage-360 .cloudimage-360-next:before {
+	background-image: url('https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/assets/img/arrow-right.svg');
+}
+.cloudimage-360 .cloudimage-360-prev.not-active, .cloudimage-360 .cloudimage-360-next.not-active {
+	opacity: 0.4;
+	cursor: default;
+}
+</style>
+</html>
+
